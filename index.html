@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pirate game</title>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+
+
+  <div class="main">
+    <div class="control-btns">
+      <button class="control__btn" id="left" onclick="left()"><img src="http://i.cubeupload.com/Q6xK9b.png" class="control__btn--left"></button>
+      <div class="vertical--buttons">
+        <button class="control__btn" id="up" onclick="gora()"><img src="http://i.cubeupload.com/Q6xK9b.png" class="control__btn--up"></button>
+        <button class="control__btn" id="down" onclick="dol()"><img src="http://i.cubeupload.com/Q6xK9b.png" class="control__btn--down"></button>
+      </div>
+      <button class="control__btn" id="right" onclick="right()"><img src="http://i.cubeupload.com/Q6xK9b.png" class="control__btn--right"></button>
+
+    </div>
+
+    <div id="game-window">
+      <div class="popup-menu" id="popup-menu">
+        <p class="popup-menu__description">Use WASD buttons or arrow buttons to catch the treasure! You have 10 seconds to reach it. Good Luck!</p>
+        <button class="btn--start" onclick="start()">Start</button>
+      </div>
+      <div id="hero-sprite">
+      </div>
+      <div id="bloczek"><img src="http://hddfhm.com/images/chest-clipart-1.png">
+      </div>
+    </div>
+
+
+    <div class="score--table">
+      <p id="licznik">0</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

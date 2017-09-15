@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+body {
+  background-color:#4D9313;
+  display: flex;
+  flex-direction: row;
+  justify-content:center;
+  font-family: 'Indie Flower', cursive;
+}
+
+.main {
+  display: flex;
+}
+
+
+.control-btns {
+  width: 240px;
+  height: 160px;
+  margin: 40px 40px auto 15px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+#game-window::after {
+  content:"";
+  background-image: url("https://image.ibb.co/fVBLU5/83659.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  width: 605px;
+  height: 594px;
+  top: -87px;
+  left: -90px;
+}
+
+#game-window {
+    width: 400px;
+    height: 400px;
+    background-image: url("https://images.designtrends.com/wp-content/uploads/2016/11/27183156/Beach-Seamless-Sand-Texture.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+    margin: 105px;
+    }
+
+@keyframes generuj {
+   0%{transform: scale(1.1,1.1);
+        }
+    50%{transform: scale(1.2,1.2);}
+    100%{transform: scale(1,1)}
+    }
+
+#hero-sprite, #bloczek {
+   width: 50px;
+   height: 50px;
+   background-color: inherit;
+   position: absolute;
+   display: none;
+
+    }
+
+#hero-sprite {
+  background-image: url("https://image.ibb.co/niMbK5/pirat2.png");
+  background-size: contain;
+}
+
+	#bloczek {
+    background-color: inherit;
+    display: none;
+    animation-duration: 0.15s;
+    animation-iteration-count:4;
+
+
+    }
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
+.popup-menu{
+  position: absolute;
+  display: block;
+  background-image: url("https://image.ibb.co/dDkve5/EndMenu.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 490px;
+  height: 490px;
+  z-index: 1;
+  transform: translate(-30px, -20px);
+  display: block;
+}
+
+.popup-menu__description {
+  font-size: 22px;
+  width: 320px;
+  margin-left: 90px;
+  margin-top: 120px;
+
+}
+
+
+.control__btn {
+  background-color: inherit;
+  border: none;
+  display: block;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+
+.control__btn:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+
+.control__btn>img:hover {
+  background-color: rgba(0,0,0,.7);
+}
+
+.btn--start {
+  align-self:center;
+  background-color: inherit;
+  border: none;
+  font-size: 2.6em;
+  margin-top: 50px;
+  margin-left: 40%;
+  font-family: 'Indie Flower', cursive;
+}
+
+.btn--start:hover {
+  text-shadow: 0 0 9px #000000;
+}
+
+.btn--start:active {
+transform: translate(1px,1px);
+}
+
+.btn--start:focus {
+  outline: none;
+}
+
+
+
+.control__btn--left{
+  transform: rotate(-180deg);
+  margin-right:-20px;
+}
+
+.control__btn--right{
+margin-left:-5px;
+}
+
+.control__btn--up {
+  transform: rotate(-90deg);
+   margin-top: 20px;
+
+
+}
+
+.control__btn--down{
+  transform: rotate(90deg);
+    margin-top: 30px;
+}
+
+.vertical--arrows{
+  flex-direction: column;
+
+}
+
+.score--table {
+  background-image: url("http://i.cubeupload.com/dj5grG.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 220px;
+  height: 350px;
+  margin-left: 100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+#licznik {
+  display: block;
+  align-self: center;
+  font-size: 3em;
+  color: white;
+  margin:0;
+  margin-bottom: 25px;
+
+}
